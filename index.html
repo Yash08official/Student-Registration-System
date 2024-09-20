@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration System</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/400-4003680_registration-for-under-graduate-student-icon-png.png"
+    />
+    <link rel="stylesheet" href="./Styles/style.css" />
+  </head>
+  <body>
+    <!-- Header section starts -->
+    <header>
+      <h1>Student Registration System</h1>
+    </header>
+    <!-- Header section ends -->
+    <main>
+      <!-- form section starts -->
+      <form id="student-form">
+        <label for="name">Student Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter student name"
+          required
+        />
+        <label for="student-id">Student ID</label>
+        <input
+          type="number"
+          id="student-id"
+          name="student-id"
+          placeholder="Enter student ID"
+          required
+        />
+        <label for="email">Email ID</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter email ID"
+          required
+        />
+        <label for="contact-no">Contact No</label>
+        <input
+          type="number"
+          id="contact-no"
+          name="contact-no"
+          placeholder="Enter contact number"
+          required
+        />
+        <button type="submit">Register</button>
+        <!-- form section ends -->
+      </form>
+      <div id="display-section">
+        <!-- display section starts -->
+        <table id="student-table">
+          <thead>
+            <tr>
+              <th>Student Name</th>
+              <th>Student ID</th>
+              <th>Email ID</th>
+              <th>Contact No</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <!-- table body section starts -->
+          <tbody id="table-body"></tbody>
+          <!-- table body section ends -->
+        </table>
+        <!-- display section starts -->
+      </div>
+    </main>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
+<!-- end -->
